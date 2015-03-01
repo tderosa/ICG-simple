@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Simple Game!</title>
+		<style>
+			body {background-color: #C2EDDB;}
+			#game {
+				background: url(assets/background2.png);
+				display: block;
+				margin: 0 auto;
+			}
+			#scorePanel {
+				color: #005108;
+				margin: 0 auto;
+				padding: 10px 0;
+				width: 625px;
+				font-family: tahoma;
+			}
+			#gameTitle {
+				font-size: 30px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="game" width="625" height="380">
+            your browser doesn't support canvas
+        </canvas>
+        <div id="scorePanel">
+        	<span id="gameTitle">Simple Game</span><br>
+        	Score: <span id="score">0</span>
+        </div>
+        <script src="Box2dWeb-2.1.a.3.min.js"></script>
+        <script src="boxbox.min.js"></script>
+        <script src="game.js"></script>	
+	</body>
+</html>
